@@ -15,9 +15,6 @@ const CartItemType = new GraphQLObjectType({
     id: {
       type: GraphQLInt,
     },
-    productId: {
-      type: GraphQLInt,
-    },
     product: {
       type: ProductType,
       resolve: (cartItem) => {
